@@ -42,7 +42,7 @@ dd
  *         description: A greeting message
  */
 app.get("/hello", (req, res) => {
-  res.json({ message: "Hello, Swagger! fdddd   " });
+  res.json({ message: "Hello, Swagger! fdddd " });
 });
 
 /**
