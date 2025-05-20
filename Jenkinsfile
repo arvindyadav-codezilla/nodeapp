@@ -1,27 +1,18 @@
+@Library('my-shared-lib') _
+
 pipeline {
   agent any
 
-
   tools {
-    nodejs 'nodejs' // Must match the name you gave in step 2
+    nodejs 'nodejs'
   }
 
   stages {
-    stage('Checkout') {
+    stage('Build Node App') {
       steps {
-        git 'https://github.com/arvindyadav-codezilla/nodeapp.git'
-      }
-    }
-
-    stage('Install Dependencies') {
-      steps {
-        sh 'npm install'
-      }
-    }
-
-    stage('Run Tests') {
-      steps {
-        sh 'npm test'
+        script {
+          nodeBuild()
+        }
       }
     }
   }
