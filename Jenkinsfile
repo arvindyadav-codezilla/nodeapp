@@ -3,7 +3,7 @@ pipeline {
 
 
   tools {
-    nodejs 'node16' // Must match the name you gave in step 2
+    nodejs 'nodejs' // Must match the name you gave in step 2
   }
 
   stages {
