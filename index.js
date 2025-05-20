@@ -10,7 +10,7 @@ const swaggerOptions = {
   definition: {
     openapi: "3.0.0",
     info: {
-      title: "Demo API",
+      title: "Demo AdddddPI",
       version: "1.0.0",
       description: "2 simple APIs with Swagger"
     }
@@ -33,14 +33,14 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 /**
  * @swagger
- * /hellodshfjksdhfsdfjh:
+ * /ffffff:
  *   get:
  *     summary: Returns a greeting
  *     responses:
  *       200:
  *         description: A greeting message
  */
-app.get("/hello", (req, res) => {
+app.get("/hellodddddd", (req, res) => {
   res.json({ message: "Hello, Swaggferddffffff !  " });
 });
 
